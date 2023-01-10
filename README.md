@@ -1,5 +1,3 @@
-# docker-base
+# r_gh_actions
 
-[![Create and publish a Docker image](https://github.com/sta523-fa22/docker-base/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/sta523-fa22/docker-base/actions/workflows/docker-publish.yml)
-
-Base docker container for Sta 523
+Base R docker container for Duke Stat Sci courses using GitHub actions
