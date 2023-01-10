@@ -30,7 +30,7 @@ jobs:
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
-          password: ${{ secrets.CR_PAT }}
+          password: ${{ secrets.DOCKER_PAT }}
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v3
@@ -38,5 +38,5 @@ jobs:
           context: .
           push: true
           platforms: linux/amd64
-          tags: ghcr.io/sta523-fa22/sta523-base:latest
+          tags: ghcr.io/DukeStatSci/r_gh_actions:latest
           
