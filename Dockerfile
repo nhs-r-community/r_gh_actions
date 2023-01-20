@@ -17,7 +17,7 @@ RUN wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.2.213/qua
     && rm quarto-*-linux-amd64.deb
 
 RUN install.r devtools rmarkdown quarto tidyverse gifski \
- && installGithub.r rundel/checklist rundel/parsermd rstudio-education/dsbox
+ && installGithub.r rundel/checklist rundel/parsermd
 
 RUN apt-get clean \
  && rm -rf /var/lib/apt/lists/*
