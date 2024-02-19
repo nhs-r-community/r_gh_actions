@@ -9,7 +9,7 @@ RUN apt-get install -y --no-install-recommends \
     libudunits2-dev libgdal-dev libgeos-dev \
     libproj-dev pandoc libmagick++-dev \
     libglpk-dev libnode-dev \
-    wget git \
+    wget git rsync \
     && sed 's/value="1GiB"/value="8GiB"/1' /etc/ImageMagick-6/policy.xml > /etc/ImageMagick-6/policy.xml
 
 RUN wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.550/quarto-1.4.550-linux-amd64.deb \
