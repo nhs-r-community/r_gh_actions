@@ -17,7 +17,7 @@ RUN wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.550/qua
     && rm quarto-*-linux-amd64.deb
 
 RUN install.r devtools rmarkdown quarto tidyverse gifski ggrepel ggpubr \
- && installGithub.r rundel/checklist rundel/parsermd \
+ && installGithub.r rundel/checklist rundel/parsermd djnavarro/jasmines \
  && installGithub.r Selbosh/ggchernoff
 
 RUN apt-get clean \
