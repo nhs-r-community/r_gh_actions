@@ -38,5 +38,5 @@ jobs:
           context: .
           push: true
           platforms: linux/amd64
-          tags: ghcr.io/dukestatsci/r_gh_actions:latest
+          tags: ghcr.io/nhsrcommunity/r_gh_actions:latest
           
