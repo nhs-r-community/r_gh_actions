@@ -35,8 +35,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          push: true
-          platforms: linux/amd64
-          tags: ${{ steps.docker_meta.outputs.tags }}
-          labels: ${{ steps.docker_meta.outputs.labels }}
-          
+          push: true          
