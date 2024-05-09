@@ -12,5 +12,7 @@ RUN wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.550/qua
 RUN apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
+RUN R -q -e 'install.packages("remotes"); remotes::install_github("rundel/checklist")'
+
 CMD ["bash"]
 
