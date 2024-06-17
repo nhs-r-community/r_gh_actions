@@ -10,8 +10,18 @@ RUN wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.550/qua
     && rm quarto-*-linux-amd64.deb
 
 RUN apt-get update && \
-  apt-get install -y libproj22 libudunits2-dev libgdal30 && \
-  rm -rf /var/lib/apt/lists/*
+  apt-get install -y libcurl4-openssl-dev \
+libssl-dev \
+libjq-dev \
+libprotobuf-dev \
+protobuf-compiler \
+make \
+libgeos-dev \
+libudunits2-dev \
+libgdal-dev \
+gdal-bin \
+libproj-dev \
+libv8-dev
 RUN R -e "install.packages('sf')"
 
 RUN apt-get clean \
