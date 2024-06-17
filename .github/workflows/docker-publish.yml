@@ -35,4 +35,5 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          push: false          
+          push: true
+          platforms: linux/amd64
