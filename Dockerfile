@@ -13,8 +13,9 @@ RUN wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.4.550/qua
     && DEBIAN_FRONTEND=noninteractive apt install ./quarto-*-linux-amd64.deb \
     && rm quarto-*-linux-amd64.deb
 
-RUN install.r devtools rmarkdown quarto tidyverse \
- && installGithub.r rundel/checklist 
+RUN install.r devtools rmarkdown quarto tidyverse gifski ggrepel ggpubr \
+ && installGithub.r rundel/checklist rundel/parsermd djnavarro/jasmines \
+ && installGithub.r Selbosh/ggchernoff
 
 RUN apt-get clean \
  && rm -rf /var/lib/apt/lists/*
