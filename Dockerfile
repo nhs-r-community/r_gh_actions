@@ -1,4 +1,7 @@
-FROM rocker/geospatial
+FROM ubuntu:16.04
+# minimal docker file to get sp and sf running on ubunty 16.04 image,
+# using gdal/geos/proj from ppa:ubuntugis/ubuntugis-unstable
+# From https://github.com/r-spatial/sf/blob/main/inst/docker/base/Dockerfile
 
 ADD Rprofile.site /usr/lib/R/etc/Rprofile.site
 
