@@ -32,9 +32,9 @@ jobs:
           password: ${{ secrets.DOCKER_PAT }}
 
       - name: Build and push Docker image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v6
         with:
           context: .
-          push: false
+          push: true
           platforms: linux/amd64
-           tags: ghcr.io/dukestatsci/r_gh_actions:latest
+           tags: ghcr.io/nhsrcommunity/r_gh_actions:latest
