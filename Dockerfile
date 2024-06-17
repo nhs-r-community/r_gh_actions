@@ -1,4 +1,4 @@
-FROM rocker/verse
+FROM rocker/r-ubuntu:22.04
 
 ADD Rprofile.site /usr/lib/R/etc/Rprofile.site
 
