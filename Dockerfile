@@ -23,6 +23,7 @@ gdal-bin \
 libproj-dev \
 libv8-dev
 RUN R -e "install.packages('sf')"
+RUN R -e "install.packages('units')"
 
 RUN apt-get clean \
  && rm -rf /var/lib/apt/lists/*
