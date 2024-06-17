@@ -35,6 +35,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          push: true
+          push: false
           platforms: linux/amd64
            tags: ghcr.io/dukestatsci/r_gh_actions:latest
